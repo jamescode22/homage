@@ -1,0 +1,860 @@
+:root {
+  --color-palette-1: rgb(122, 193, 67);
+  --color-palette-2: rgb(0, 137, 69);
+  --color-palette-3: rgb(251, 255, 246);
+  --color-palette-4: rgb(255, 210, 0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* .tk-proxima-soft { font-family: "proxima-soft",sans-serif; }
+.tk-proxima-soft-condensed { font-family: "proxima-soft-condensed",sans-serif; } */
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "proxima-soft", sans-serif;
+  background-color: var(--color-palette-3);
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--color-palette-2);
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-family: "proxima-soft-condensed", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.home-intro {
+  margin: 15px;
+}
+
+.home-intro-2 {
+  margin: 60px 15px;
+  text-align: center;
+}
+
+.home-intro-2 p {
+  color: black;
+  font-weight: 700;
+  margin-top: 20px;
+  line-height: 3.2rem;
+}
+
+.home-intro-2 img {
+  margin-top: 15px;
+  width: 203px;
+  height: 120px;
+}
+
+main {
+  padding-top: 90px;
+}
+
+video {
+  max-width: 100%;
+}
+
+.med-btn-link {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.1rem;
+  border-radius: 15px;
+  margin-right: 5px;
+  color: black;
+}
+
+.med-btn-1 {
+  /* Filled green */
+  background-color: var(--color-palette-1);
+  border: 3px solid var(--color-palette-1);
+}
+
+.med-btn-2 {
+  /* Filled white, green border*/
+  background-color: #fff;
+  border: 3px solid var(--color-palette-1);
+}
+
+.med-btn-3 {
+  /* Filled yellow */
+  background-color: var(--color-palette-4);
+  border: 3px solid var(--color-palette-4);
+}
+
+.med-btn-4 {
+  /* Filled white */
+  background-color: white;
+  border: 3px solid white;
+}
+
+.med-btn-1:hover,
+.med-btn-2:hover,
+.med-btn-4:hover {
+  border: 3px solid yellow;
+}
+
+.med-btn-3:hover {
+  border: 3px solid rgb(122, 193, 67);
+}
+
+/* BIG FEATURE BOX */
+
+.big-feature-box {
+  background-color: rgb(0, 137, 69);
+  color: white;
+}
+
+.big-feature-box p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.big-feature-box .med-btn-link {
+  text-align: center;
+}
+
+.big-feature-box-layout {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.big-feature-box-main {
+  min-height: 500px;
+  background: linear-gradient(
+      180deg,
+      rgba(156, 156, 156, 0) 40%,
+      rgba(24, 24, 24, 0.7) 100%
+    ),
+    url("./assets/membership-image.webp") no-repeat center top/cover;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.big-feature-box-layout-sub {
+  display: flex;
+  flex-direction: column;
+}
+
+.big-feature-box-sub {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.big-feature-box-sub .img-otter {
+  background: url("./assets/halloween_otter.jpg") no-repeat center/cover;
+  height: 300px;
+  border-radius: 10%;
+  margin-bottom: 5px;
+}
+
+.big-feature-box-sub .img-penguin {
+  background: url("./assets/penguins.webp") no-repeat center/cover;
+  height: 300px;
+  border-radius: 10%;
+  margin-bottom: 5px;
+}
+
+.big-feature-box .med-btn-link {
+  margin-top: 20px;
+}
+
+/* END BIG FEATURE BOX */
+body {
+  position: relative;
+}
+/* HEADER AND TOP NAVIGATION */
+header {
+  position: fixed;
+  z-index: 1;
+  width: calc(100vw - 20px);
+  background-color: white;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 0px 5px 10px rgb(205, 205, 205);
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+/* HAMBURGER ICON */
+
+nav .hamburger {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: var(--color-palette-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav .hamburger:focus-within > div {
+  transform: rotate(45deg);
+}
+
+nav .hamburger:focus-within > div:after,
+nav .hamburger:focus-within > div:before {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+nav .hamburger > div {
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  position: relative;
+}
+
+nav .hamburger > div:before,
+nav .hamburger > div:after {
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  top: 8px;
+}
+
+nav .hamburger > div:after {
+  top: -8px;
+}
+
+nav .hamburger:focus-within + .top-menu {
+  left: -10px;
+  opacity: 1;
+}
+
+/* NAV */
+
+nav .top-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: calc(100vh - 75px);
+  /* need the width of the viewport minus header margin */
+  width: calc(100vw - 10px);
+  left: -100vw;
+  /* left: 0vw; */
+  top: 75px;
+  background-color: white;
+  z-index: 1;
+  transition: left 0.1s ease-in;
+  opacity: 0;
+}
+
+nav .top-menu .menu-arrow-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  margin: 15px;
+}
+
+nav form {
+  /* search text input box */
+  position: relative;
+  padding: 15px;
+}
+
+nav form input {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.5em;
+  padding: 10px 5px;
+  border: 0;
+  box-shadow: 0 5px 10px rgb(222, 223, 205);
+}
+
+nav form button {
+  position: absolute;
+  background-color: transparent;
+  border: 0;
+  z-index: 2;
+  top: 20px;
+  right: 50px;
+}
+
+nav form button svg path {
+  fill: rgb(67, 67, 67);
+  /* stroke: rgb(71, 71, 71); */
+}
+
+nav .menu-arrow-link svg {
+  transform: translateX(-30px);
+}
+
+nav .menu-arrow-link svg path {
+  fill: var(--color-palette-1);
+  stroke: var(--color-palette-1);
+}
+nav .menu-arrow-link span {
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+nav .menu-med-font span {
+  font-size: 2.3rem;
+}
+
+nav .menu-btn-link {
+  font-size: 1.5rem;
+  font-weight: 800;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.8rem;
+  border-radius: 15px;
+  margin: 15px;
+  color: black;
+  text-align: center;
+  background-color: white;
+  border: 1px solid var(--color-palette-1);
+}
+
+.menu-divider {
+  border-top: 2px solid var(--color-palette-4);
+  margin: 0 10px;
+}
+
+nav .sub-menu {
+  display: none;
+}
+
+/* LARGE BUTTONS */
+
+.lrg-buttons {
+  padding: 50px 10px;
+  background: url("./assets/pattern-london-left.svg") -25% 0% / 35% no-repeat,
+    url("./assets/pattern-london-right.svg") 125% 100% / 35% no-repeat;
+}
+
+.lrg-buttons-container {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.lrg-btn-with-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 2rem 6rem;
+  border-radius: 15px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.lrg-btn-with-img p {
+  color: black;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.lrg-btn-with-img:nth-of-type(odd) {
+  background-color: var(--color-palette-1);
+}
+
+.lrg-btn-with-img:nth-of-type(odd) svg path {
+  stroke: var(--color-palette-4);
+  fill: var(--color-palette-4);
+}
+
+.lrg-btn-with-img:nth-of-type(even) {
+  background-color: var(--color-palette-4);
+}
+
+.lrg-btn-with-img:nth-of-type(even) svg path {
+  stroke: var(--color-palette-1);
+  fill: var(--color-palette-1);
+}
+
+/* END LARGE BUTTONS */
+
+.orphan-heading {
+  margin-left: 15px;
+}
+
+/*  */
+
+.scroll-quotes-container {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+
+.scroll-quotes-container span {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 200;
+  margin-top: 10px;
+}
+
+.scroll-quotes-container div {
+  margin: 10px;
+  min-width: 250px;
+  padding: 25px;
+  border-radius: 10%;
+  background-color: var(--color-palette-2);
+}
+
+.scroll-quotes-container div p {
+  color: white;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  font-weight: 600;
+}
+
+/* SCROLL */
+.scroll-cards-container {
+  display: flex;
+  margin: 10px 0 20px 0;
+  overflow-y: hidden;
+  overflow-x: visible;
+}
+
+.scroll-cards-container div {
+  margin: 10px;
+}
+.scroll-cards-container div a {
+  text-decoration: none;
+}
+
+.scroll-cards-container div p {
+  color: black;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.scroll-cards-container div span {
+  color: black;
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.scroll-cards-container div h4 {
+  color: var(--color-palette-2);
+  font-size: 2.2rem;
+  font-weight: 100;
+}
+
+.scroll-cards-container div img {
+  height: 200px;
+  width: 300px;
+  border-radius: 10%;
+}
+
+/*  */
+.highlight-box {
+  background: url("./assets/pattern-london-left.svg") no-repeat 50% 140%/50%,
+    var(--color-palette-1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 20px;
+  margin: 50px 15px;
+  border-radius: 20%;
+}
+
+.highlight-box p {
+  color: black;
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+footer .rest-of-footer {
+  background-color: var(--color-palette-2);
+}
+
+footer .curved-bit {
+  margin-top: 100px;
+  width: 100%;
+  height: 20px;
+  background-color: var(--color-palette-2);
+  border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+}
+
+footer p {
+  color: white;
+  font-size: 1.5rem;
+  padding: 15px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+footer p a {
+  color: white;
+}
+
+.connect-with-us {
+  padding: 15px;
+}
+.connect-with-us > h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.connect-with-us-icons {
+  display: flex;
+  padding-top: 10px;
+}
+
+.connect-with-us-icons a {
+  padding-right: 20px;
+}
+
+.subscribe-box {
+  background-color: white;
+  padding: 15px;
+}
+
+.subscribe-box h3 {
+  font-size: 2rem;
+}
+.subscribe-box p {
+  color: black;
+  padding: 0;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.footer-links-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links {
+  line-height: 4rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links li:first-child {
+  margin-top: 15px;
+  font-size: 2rem;
+}
+
+.footer-badges {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-badges a {
+  display: block;
+  padding: 10px;
+}
+
+.footer-badges img {
+  max-height: 40px;
+}
+
+.footer-smallprint {
+  font-size: 1.25rem;
+  font-weight: 300;
+  max-width: 500px;
+  padding: 0 15px;
+}
+
+/*  FOOTER LOGO AND CURVE */
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 20px;
+}
+
+.footer-logo {
+  background: url("./assets/footer-circle.svg") no-repeat bottom center;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.final-footer-layout {
+  display: flex;
+  /* flex-direction: row-reverse; */
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  main {
+    padding-top: 0;
+    position: relative;
+  }
+
+  .home-intro {
+    position: absolute;
+    top: 150px;
+    left: 0;
+  }
+
+  .home-intro p {
+    color: var(--color-palette-4);
+  }
+
+  .home-intro h1 {
+    color: white;
+  }
+
+  video {
+    width: 100vw;
+    border-radius: 0px 0px 20% 5% / 0px 0px 30% 6%;
+  }
+
+  .big-feature-box-layout {
+    flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .big-feature-box-layout-sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .big-feature-box-layout h3 {
+    font-size: 3rem;
+  }
+
+  .big-feature-box-sub {
+    width: 50%;
+  }
+
+  .home-intro {
+    position: absolute;
+    top: 250px;
+    left: 0;
+  }
+
+  .home-intro p {
+    font-size: 4rem;
+  }
+
+  .home-intro h1 {
+    font-size: 10rem;
+  }
+
+  /* DESKTOP VIEW NAV */
+
+  nav .hamburger {
+    display: none;
+  }
+
+  nav .top-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    position: initial;
+    height: initial;
+    width: initial;
+    opacity: 1;
+  }
+
+  nav .top-menu .menu-med-font {
+    font-size: 1.5rem;
+    font-weight: 800;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 15px;
+    margin: 15px;
+    color: black;
+    text-align: center;
+    background-color: white;
+    border: 1px solid var(--color-palette-1);
+  }
+
+  nav .top-menu .menu-arrow-link {
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color 0.25s ease-in-out;
+  }
+
+  nav .top-menu .menu-arrow-link span {
+    font-size: 1.65rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  nav .top-menu .menu-arrow-link:hover {
+    background-color: rgb(254, 199, 49);
+  }
+
+  nav .top-menu svg,
+  nav .top-menu form,
+  nav .top-menu .menu-divider,
+  nav .top-menu .menu-btn-link {
+    display: none;
+  }
+
+  header img {
+    order: -1;
+  }
+
+  .lrg-buttons-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: auto;
+  }
+
+  .lrg-btn-with-img p {
+    font-size: 1.9rem;
+    font-weight: 600;
+  }
+
+  .lrg-btn-with-img {
+    padding: 3rem 6rem;
+    width: 22%;
+  }
+
+  .lrg-btn-with-img:first-of-type,
+  .lrg-btn-with-img:last-of-type {
+    width: 48%;
+  }
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 800;
+  }
+  .scroll-cards-container div p {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .scroll-cards-container div span {
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  .scroll-cards-container div h4 {
+    font-size: 4rem;
+    font-weight: 300;
+  }
+
+  .scroll-cards-container div img {
+    height: 400px;
+    width: 600px;
+    border-radius: 10%;
+  }
+
+  .scroll-quotes-container span {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-top: 10px;
+  }
+
+  .scroll-quotes-container div p {
+    color: white;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+
+  .scroll-quotes-container div {
+    margin: 10px;
+    min-width: 250px;
+    padding: 40px;
+    border-radius: 10%;
+  }
+
+  .highlight-box {
+    background: url("./assets/pattern-london-left.svg") no-repeat 125% -130%/40%,
+      var(--color-palette-1);
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 150px;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .footer-badges img {
+    max-height: 60px;
+  }
+
+  .footer-smallprint {
+    font-size: 1.25rem;
+    font-weight: 300;
+    max-width: 500px;
+    padding: 0 15px;
+  }
+
+  .footer-links-layout {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .footer-links {
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 15px;
+  }
+
+  .footer-links li:first-child {
+    margin-top: 15px;
+    font-size: 2.5rem;
+  }
+
+  .subscribe-box,
+  .connect-with-us {
+    width: 500px;
+    margin: auto;
+  }
+}

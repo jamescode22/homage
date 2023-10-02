@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/olf6cwl.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>London Zoo</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="hamburger" tabindex="0"><div></div></div>
+        <div class="top-menu">
+          <form>
+            <input type="search" placeholder="Start typing to search...." />
+            <button type="submit">
+              <svg
+                width="28"
+                height="28"
+                viewBox="0 0 28 28"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22.5541 11.5267C22.5541 8.19851 21.0505 5.04804 18.4631 2.95493C15.8756 0.861202 12.4811 0.0482507 9.22629 0.742902C5.97115 1.43725 3.20375 3.56498 1.69614 6.53224C0.188537 9.49958 0.101819 12.989 1.46006 16.028C2.81861 19.0666 5.47673 21.3289 8.69317 22.1842C11.9099 23.0398 15.3408 22.3964 18.0292 20.4341L25.0995 27.5L27.5 25.0995L20.434 18.0292C21.8159 16.1435 22.5588 13.8655 22.5546 11.5274L22.5541 11.5267ZM3.89265 11.5267C3.89265 9.50231 4.69674 7.56036 6.12861 6.1288C7.56017 4.69693 9.50213 3.89284 11.5266 3.89284C13.5513 3.89284 15.4932 4.69693 16.9248 6.1288C18.3564 7.56036 19.1608 9.50231 19.1608 11.5267C19.1608 13.5515 18.3564 15.4934 16.9248 16.925C15.4932 18.3565 13.5513 19.1609 11.5266 19.1609C9.50213 19.1609 7.56017 18.3565 6.12861 16.925C4.69674 15.4934 3.89265 13.5515 3.89265 11.5267Z"
+                  fill="#008945"
+                ></path>
+              </svg>
+            </button>
+          </form>
+
+          <a href="#" class="menu-arrow-link"
+            ><span>Plan Your Visit</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <a href="#" class="menu-arrow-link"
+            ><span>What's Here</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <a href="#" class="menu-arrow-link"
+            ><span>Zoo Stories</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <a href="#" class="menu-arrow-link"
+            ><span>Conservation</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <a href="#" class="menu-arrow-link"
+            ><span>Education</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <a href="#" class="menu-arrow-link"
+            ><span>Support Us</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <div class="menu-divider"></div>
+          <a href="#" class="menu-arrow-link menu-med-font"
+            ><span>Membership</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <a href="#" class="menu-arrow-link menu-med-font"
+            ><span>Shop</span
+            ><svg
+              width="33"
+              height="24"
+              viewBox="0 0 33 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 10.5H0.5L0.5 13.5H2L2 10.5ZM31.9478 13.0607C32.5336 12.4749 32.5336 11.5251 31.9478 10.9393L22.4019 1.3934C21.8161 0.807611 20.8663 0.807611 20.2806 1.3934C19.6948 1.97919 19.6948 2.92893 20.2806 3.51472L28.7658 12L20.2806 20.4853C19.6948 21.0711 19.6948 22.0208 20.2806 22.6066C20.8663 23.1924 21.8161 23.1924 22.4019 22.6066L31.9478 13.0607ZM2 13.5L30.8872 13.5V10.5L2 10.5L2 13.5Z"
+                fill="#C7F700"
+              ></path></svg
+          ></a>
+
+          <div class="menu-divider"></div>
+          <a href="#" class="menu-btn-link">ZSL</a>
+          <a href="#" class="menu-btn-link">WHIPSNADE ZOO</a>
+        </div>
+      </nav>
+
+      <img src="./assets/london_zoo_logo_mobile.svg" />
+
+      <div>
+        <a href="#" class="med-btn-1 med-btn-link">Tickets</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- BEGIN VIDEO -->
+      <video autoplay loop>
+        <source src="./assets/lz_home_video.mp4" type="video/mp4" />
+      </video>
+
+      <!-- <video autoplay loop poster="./assets/lz_vid_poster.webp">
+        <source src="./assets/lz_home_video.mp4" type="video/mp4" />
+      </video> -->
+
+      <section class="home-intro">
+        <p>Experience a world of wildlife in the heart of London</p>
+        <h1>Visit London Zoo</h1>
+
+        <a href="#" class="med-btn-1 med-btn-link">BOOK TICKETS</a>
+        <a href="#" class="med-btn-2 med-btn-link">BECOME A ZOO MEMBER</a>
+      </section>
+
+      <section class="home-intro-2">
+        <h2>A great day out that makes a difference</h2>
+        <p>
+          Feel closer to nature at London Zoo, a ZSL conservation zoo in the
+          heart of one of the world’s most vibrant capital cities. Discover
+          amazing wildlife, learn how we're protecting their future and share
+          incredible memories of our leaping, roaring, squawking natural world.
+        </p>
+        <img src="./assets/tripadvisor.webp" />
+      </section>
+
+      <section class="lrg-buttons">
+        <div class="lrg-buttons-container">
+          <a class="lrg-btn-with-img" href="#">
+            <svg
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.8097 20.266H21.3571V9.38601C21.3571 8.52164 20.6987 7.82636 19.8802 7.82636C19.0616 7.82636 18.4032 8.52164 18.4032 9.38601L18.2608 23.4792H29.792C30.6283 23.4792 31.3045 22.7464 31.3045 21.882C31.3223 20.9988 30.6461 20.266 29.8097 20.266Z"
+                fill="none"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M20 36.6682C29.2051 36.6682 36.6674 29.206 36.6674 20.0009C36.6674 10.7957 29.2051 3.33348 20 3.33348C10.7949 3.33348 3.33262 10.7957 3.33262 20.0009C3.33262 29.206 10.7949 36.6682 20 36.6682ZM20 40.0017C31.0462 40.0017 40.0009 31.047 40.0009 20.0009C40.0009 8.95469 31.0462 0 20 0C8.95383 0 -0.000854492 8.95469 -0.000854492 20.0009C-0.000854492 31.047 8.95383 40.0017 20 40.0017Z"
+                fill="none"
+              ></path>
+            </svg>
+            <p>Open daily from 10am</p>
+          </a>
+
+          <a class="lrg-btn-with-img" href="#">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M38.5774 21.4934L18.2904 0.459991C18.0132 0.173625 17.6332 0.00700815 17.2336 0C16.8263 0.00700134 16.449 0.145628 16.1621 0.422889L12.1203 4.32541C11.8333 4.60267 11.6675 4.98285 11.6604 5.38262C11.6527 5.78101 11.806 6.16748 12.0818 6.45454C12.4989 6.88724 12.7292 7.45155 12.7292 8.04317C12.7292 9.30973 11.701 10.339 10.4342 10.339C9.81132 10.339 9.22693 10.0884 8.78672 9.63327C8.21002 9.03535 7.2575 9.01994 6.65983 9.59616L2.61747 13.4974C2.01837 14.0758 2.00229 15.0279 2.57828 15.6266L5.02014 18.1583H1.50471C0.673972 18.1583 0 18.8318 0 19.6636V25.2773C0 26.1084 0.673972 26.7826 1.50471 26.7826C2.77078 26.7826 3.79966 27.8111 3.79966 29.0784C3.79966 30.3429 2.77155 31.3743 1.50471 31.3743C0.673972 31.3743 0 32.0485 0 32.8796V38.4947C0 39.3258 0.673972 40 1.50471 40H30.7232C31.554 40 32.2279 39.3258 32.2279 38.4947V32.8796C32.2279 32.0485 31.554 31.3743 30.7232 31.3743C29.4579 31.3743 28.4283 30.3437 28.4283 29.0784C28.4283 27.8119 29.4578 26.7826 30.7232 26.7826C31.3461 26.7826 31.9312 27.0332 32.37 27.4883C32.6458 27.7747 33.0265 27.9413 33.4268 27.949H33.4541C33.8446 27.949 34.2184 27.7985 34.4997 27.5254L38.5421 23.6222C39.1376 23.046 39.1551 22.0931 38.5778 21.493L38.5774 21.4934ZM9.70113 36.989H3.00693V34.1674C5.20244 33.517 6.80652 31.4817 6.80652 29.0787C6.80652 26.6757 5.20102 24.6404 3.00693 23.99V21.1685H8.52043H8.55752H9.7011L9.70113 36.989ZM19.5134 36.989H12.7127V21.1685H19.5134V36.989ZM29.217 23.9902C27.0215 24.6406 25.4175 26.6759 25.4175 29.0789C25.4175 31.4819 27.0229 33.5171 29.217 34.1676V36.9891H22.5228V21.1686H29.217V23.9902ZM30.7225 18.158H9.20095L5.78836 14.6202L7.81796 12.6612C8.60531 13.1121 9.50045 13.3515 10.432 13.3515C13.3574 13.3515 15.7362 10.9718 15.7362 8.04522C15.7362 7.18334 15.5284 6.34596 15.1364 5.59684L17.166 3.63778L31.2795 18.2708C31.1088 18.1987 30.9212 18.1581 30.7224 18.1581L30.7225 18.158ZM33.3372 24.4614C32.9859 24.2618 32.6128 24.1099 32.2272 23.9944V19.6626C32.2272 19.4799 32.1901 19.3076 32.1299 19.1459L35.3668 22.5003L33.3372 24.4614ZM15.7362 25.8771H16.4879C17.3186 25.8771 17.9926 25.2028 17.9926 24.3718C17.9926 23.5407 17.3186 22.8665 16.4879 22.8665H15.7362C14.9048 22.8665 14.2315 23.5407 14.2315 24.3718C14.2315 25.2021 14.9048 25.8771 15.7362 25.8771ZM15.7362 30.5842H16.4879C17.3186 30.5842 17.9926 29.9099 17.9926 29.0789C17.9926 28.2478 17.3186 27.5736 16.4879 27.5736H15.7362C14.9048 27.5736 14.2315 28.2478 14.2315 29.0789C14.2315 29.9099 14.9048 30.5842 15.7362 30.5842ZM15.7362 35.2906H16.4879C17.3186 35.2906 17.9926 34.6163 17.9926 33.7853C17.9926 32.9542 17.3186 32.28 16.4879 32.28H15.7362C14.9048 32.28 14.2315 32.9542 14.2315 33.7853C14.2315 34.6163 14.9048 35.2906 15.7362 35.2906Z"
+                fill="black"
+              ></path>
+            </svg>
+            <p>Book tickets</p>
+          </a>
+
+          <a class="lrg-btn-with-img" href="#">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M10.4 8.80015C10.4 9.68349 11.1159 10.4 11.9998 10.4L11.9998 10.4C12.4239 10.4 12.8313 10.2315 13.1309 9.93129C13.4312 9.63162 13.5997 9.22426 13.5997 8.80015V7.99975L26.4 7.99974V8.80015C26.4 9.68349 27.1159 10.4 27.9999 10.4L27.9998 10.4C28.4239 10.4 28.8313 10.2315 29.131 9.93129C29.4312 9.63162 29.5997 9.22426 29.5997 8.80015V7.99973L32.7999 7.99973C33.224 7.99973 33.6308 8.16824 33.931 8.46847C34.2312 8.7687 34.3998 9.1755 34.3998 9.59962V13.5999H5.59997V9.59962C5.59997 8.71627 6.31645 7.99976 7.19983 7.99976L10.4 7.99975V8.80015ZM2.40014 15.181C2.40006 15.1875 2.40002 15.1939 2.40002 15.2004C2.40002 15.2068 2.40006 15.2133 2.40014 15.2197V35.2001C2.40014 36.4729 2.90568 37.694 3.80582 38.5941C4.70597 39.4942 5.92694 39.9998 7.19983 39.9998H32.7998C34.0727 39.9998 35.2937 39.4942 36.1938 38.5941C37.0939 37.6939 37.5995 36.473 37.5995 35.2001V15.2277C37.5997 15.2186 37.5998 15.2095 37.5998 15.2004C37.5998 15.1912 37.5997 15.1821 37.5995 15.173V9.60007C37.5995 8.32722 37.094 7.10617 36.1938 6.20607C35.2937 5.30597 34.0727 4.80038 32.7998 4.80038H29.5997V1.59986C29.5997 0.716515 28.8838 0 27.9999 0C27.116 0 26.4 0.716487 26.4 1.59986V4.80038H13.5997V1.59986C13.5997 0.716515 12.8837 0 11.9998 0C11.1159 0 10.4 0.716487 10.4 1.59986V4.80038H7.19983C5.92697 4.80038 4.70593 5.30593 3.80582 6.20607C2.90572 7.10621 2.40014 8.32719 2.40014 9.60007V15.181ZM34.3998 16.8002V35.1996C34.3998 35.6237 34.2312 36.0305 33.931 36.3308C33.6308 36.631 33.224 36.7995 32.7999 36.7995H7.19986C6.77574 36.7995 6.36894 36.631 6.06871 36.3308C5.7685 36.0305 5.59997 35.6237 5.59997 35.1996V16.8002H34.3998ZM11.9999 32C11.3548 31.9972 10.7745 31.6077 10.5278 31.0117C10.2817 30.4152 10.4173 29.7293 10.8721 29.2723C11.496 28.6517 12.5038 28.6517 13.1277 29.2723C13.5825 29.7293 13.7181 30.4151 13.472 31.0117C13.2253 31.6077 12.645 31.9972 11.9999 32ZM26.5277 31.0117C26.7744 31.6077 27.3547 31.9972 27.9998 32C28.6449 31.9972 29.2253 31.6077 29.4719 31.0117C29.718 30.4151 29.5824 29.7293 29.1276 29.2723C28.5037 28.6517 27.4959 28.6517 26.872 29.2723C26.4172 29.7293 26.2816 30.4152 26.5277 31.0117ZM11.9999 24.8002C11.3531 24.8007 10.77 24.4118 10.5216 23.8152C10.2727 23.2181 10.4083 22.5306 10.8637 22.0719C11.4993 21.4715 12.4925 21.4715 13.1277 22.0719C13.5825 22.5295 13.7181 23.2154 13.472 23.8114C13.2253 24.4074 12.645 24.7974 11.9999 24.8002L11.9999 24.8002ZM18.5216 31.0153C18.7699 31.6124 19.3531 32.0008 19.9999 32.0002C20.424 32.0002 20.8313 31.8317 21.131 31.5315C21.4312 31.2318 21.5997 30.8245 21.5997 30.4003C21.5981 29.9768 21.4284 29.5711 21.1276 29.2726C20.4909 28.676 19.5004 28.676 18.8636 29.2726C18.4083 29.7307 18.2727 30.4187 18.5216 31.0153ZM19.9999 24.8002C19.3531 24.8007 18.7699 24.4118 18.5216 23.8152C18.2727 23.2181 18.4083 22.5306 18.8636 22.0719C19.4992 21.4715 20.4925 21.4715 21.1276 22.0719C21.5824 22.5295 21.718 23.2154 21.472 23.8114C21.2253 24.4074 20.6449 24.7974 19.9998 24.8002L19.9999 24.8002ZM26.4 23.2003C26.4 24.0836 27.1159 24.8001 27.9999 24.8001L27.9999 24.8002C28.645 24.7974 29.2254 24.4074 29.472 23.8114C29.7181 23.2154 29.5825 22.5295 29.1277 22.0719C28.4926 21.4715 27.4993 21.4715 26.8637 22.0719C26.5663 22.3722 26.3994 22.7773 26.4 23.2003Z"
+                fill="black"
+              ></path>
+            </svg>
+            <p>Upcoming Events</p>
+          </a>
+
+          <a class="lrg-btn-with-img" href="#">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M22.8354 31.7468C23.0887 32.3038 23.5948 32.6075 24.1518 32.6075C24.3542 32.6075 24.5569 32.557 24.7593 32.4557C25.5186 32.1011 25.8228 31.2404 25.4681 30.481C25.4681 30.481 22.6832 24.1013 22.1772 21.7721C21.9748 20.9619 21.8734 18.7849 21.8226 17.7723C21.8226 17.4177 22.025 17.114 22.3291 17.013L28.5568 15.1396C29.3162 14.9372 29.7721 14.0762 29.5694 13.3168C29.367 12.5575 28.5059 12.1016 27.7466 12.3043C27.7466 12.3043 21.9744 14.1776 19.8984 14.1776C17.8733 14.1776 12.1516 12.3548 12.1516 12.3548C11.3922 12.1524 10.5311 12.5067 10.2782 13.266C10.025 14.0762 10.4806 14.9369 11.2908 15.1394L17.5186 17.0127C17.8223 17.114 18.0755 17.4178 18.025 17.772C17.9745 18.7846 17.8732 20.962 17.6704 21.7719C17.164 24.1011 14.3795 30.4807 14.3795 30.4807C14.0249 31.2401 14.3795 32.1011 15.0883 32.4554C15.2907 32.5568 15.4934 32.6073 15.6958 32.6073C16.2528 32.6073 16.8097 32.3035 17.0122 31.7465L20.0001 25.6707L22.8354 31.7468Z"
+                fill="black"
+              ></path>
+              <path
+                d="M22.8354 9.87342C22.8354 11.4394 21.5661 12.7088 20.0001 12.7088C18.4341 12.7088 17.1647 11.4394 17.1647 9.87342C17.1647 8.30742 18.4341 7.03807 20.0001 7.03807C21.5661 7.03807 22.8354 8.30742 22.8354 9.87342Z"
+                fill="black"
+              ></path>
+              <path
+                d="M40 20C40 8.96202 31.0379 0 20 0C8.96211 0 0 8.96211 0 20C0 31.0379 8.96211 40 20 40C31.0379 40 40 31.0379 40 20ZM3.34177 20C3.34177 10.7848 10.8354 3.34177 20 3.34177C29.1646 3.34177 36.6582 10.7844 36.6582 20C36.6582 29.2155 29.2155 36.6582 20 36.6582C10.7844 36.6582 3.34177 29.2155 3.34177 20Z"
+                fill="black"
+              ></path>
+            </svg>
+            <p>Accessibility</p>
+          </a>
+
+          <a class="lrg-btn-with-img" href="#">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.5 19.0586C0.5 16.7502 2.31851 14.8521 4.59492 14.7955L7.12865 7.06133L7.12866 7.0613C7.82484 4.93663 9.77745 3.5 11.9912 3.5H27.008C29.221 3.5 31.175 4.9365 31.87 7.0613L31.8701 7.06157L34.4042 14.7955C36.6801 14.852 38.4994 16.7499 38.4994 19.0585L38.5 28.4704C38.5 30.1239 37.3001 31.5101 35.7249 31.7555V33.1763C35.7249 35.0008 34.2639 36.5 32.4498 36.5H30.6C28.7858 36.5 27.3249 35.0008 27.3249 33.1763V31.7941H11.6752V33.1763C11.6752 35.0008 10.2141 36.5 8.40003 36.5H6.55023C4.7361 36.5 3.27512 35.0008 3.27512 33.1763V31.7555C1.69989 31.5101 0.5 30.1238 0.5 28.4704V19.0586ZM29.1642 7.96816L31.4012 14.7942H7.59681L9.83315 7.96828C10.146 7.0144 11.0157 6.38236 11.9906 6.38236H27.0067C27.9825 6.38236 28.8524 7.01466 29.1641 7.96785L29.1642 7.96816ZM8.82386 33.1756C8.82386 33.4263 8.62405 33.6171 8.39861 33.6171H6.54881C6.32338 33.6171 6.12356 33.4263 6.12356 33.1756V31.7934H8.82335L8.82386 33.1756ZM32.8734 33.1758C32.8733 33.4264 32.6736 33.6171 32.4482 33.6171H30.5984C30.3729 33.6171 30.1731 33.4263 30.1731 33.1756V31.7934H32.8729L32.8734 33.1756V33.1758V33.1758ZM35.6485 28.4697C35.6485 28.7204 35.4487 28.9112 35.2233 28.9112H3.77386C3.54842 28.9112 3.34861 28.7204 3.34861 28.4697V19.0579C3.34861 18.2879 3.96264 17.6757 4.69841 17.6757H34.2979C35.0347 17.6757 35.6477 18.2877 35.6477 19.0579L35.6485 28.4697ZM7.93654 18.5579C5.86687 18.5579 4.19877 20.2678 4.19877 22.3524C4.19877 24.4369 5.86687 26.1468 7.93654 26.1468C10.0062 26.1468 11.6743 24.4369 11.6743 22.3524C11.6743 20.2678 10.0062 18.5579 7.93654 18.5579ZM7.93654 23.2638C7.45576 23.2638 7.04934 22.8625 7.04934 22.3523C7.04934 21.8417 7.45611 21.4408 7.93654 21.4408C8.41733 21.4408 8.82376 21.8421 8.82376 22.3523C8.82376 22.863 8.41748 23.2638 7.93654 23.2638ZM31.0611 18.5579C28.9915 18.5579 27.3234 20.2678 27.3234 22.3524C27.3234 24.4369 28.9915 26.1468 31.0611 26.1468C33.1308 26.1468 34.7989 24.4369 34.7989 22.3524C34.7989 20.2678 33.1308 18.5579 31.0611 18.5579ZM31.0611 23.2638C30.5803 23.2638 30.1739 22.8625 30.1739 22.3523C30.1739 21.8417 30.5807 21.4408 31.0611 21.4408C31.5419 21.4408 31.9483 21.8421 31.9483 22.3523C31.9483 22.863 31.5421 23.2638 31.0611 23.2638Z"
+                fill="black"
+              ></path>
+            </svg>
+            <p>Car Parking</p>
+          </a>
+
+          <a class="lrg-btn-with-img" href="#">
+            <svg
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.0006 1C12.5571 1 6.5 7.19874 6.5 14.8191C6.5 17.9172 8.59158 23.0181 12.7174 29.9822C15.7158 35.0426 18.7577 39.3257 18.7875 39.3683C19.0698 39.7651 19.5204 40 20 40C20.4793 40 20.9296 39.7651 21.2119 39.3683C21.2423 39.326 24.2841 35.0423 27.2826 29.9822C31.4078 23.0191 33.5 17.9181 33.5 14.8191C33.5 7.19905 27.4444 1 20.0002 1H20.0006ZM20.0006 35.8127C16.2365 30.278 9.50039 19.4192 9.50039 14.8183C9.50039 8.89217 14.2109 4.07039 20.0006 4.07039C25.7905 4.07039 30.5008 8.89202 30.5008 14.8183C30.5005 19.4166 23.764 30.277 20.0014 35.8127H20.0006ZM20.0006 7.14078C15.865 7.14078 12.5007 10.5844 12.5007 14.8176C12.501 19.0508 15.865 22.4954 20.0006 22.4954C24.1362 22.4954 27.5008 19.0514 27.5008 14.8182C27.5008 10.5851 24.1359 7.14078 20.0006 7.14078ZM20.0006 19.4239C17.519 19.4239 15.5006 17.3573 15.5006 14.8178C15.5006 12.2782 17.519 10.2116 20.0006 10.2116C22.4816 10.2116 24.5006 12.2782 24.5006 14.8178C24.5006 17.3573 22.4816 19.4239 20.0006 19.4239Z"
+                fill="black"
+              ></path>
+            </svg>
+            <p>Getting Here</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- BEGIN EXPLORE LONDON ZOO -->
+      <div class="orphan-heading">
+        <h2>Explore London Zoo</h2>
+      </div>
+
+      <section class="scroll-cards-container">
+        <div>
+          <a href="#">
+            <img src="./assets/explore_card_1.jpg" />
+            <span>CONNECT WITH THE NATURAL WORLD</span>
+            <h4>Habitats</h4>
+            <p>
+              Experience wildlife from across the world in a day like no other
+            </p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="./assets/explore_card_2.jpg" />
+            <span>FIND OUT MORE</span>
+            <h4>Our Animals</h4>
+            <p>
+              Experience wildlife from across the world in a day like no other
+            </p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="./assets/explore_card_3.jpg" />
+            <span>DISCOVER MORE</span>
+            <h4>Upcoming Events</h4>
+            <p>Check out our exciting schedule of upcoming events</p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img src="./assets/explore_card_2.jpg" />
+            <span>SEE WHAT'S ON</span>
+            <h4>Daily animal talks</h4>
+            <p>
+              Our daily animal talks share the latest understanding of
+              endangered species
+            </p>
+          </a>
+        </div>
+      </section>
+
+      <!-- BEGIN BIG GREEN BOX -->
+      <section class="big-feature-box">
+        <h2>Don't Miss These!</h2>
+
+        <div class="big-feature-box-layout">
+          <div class="big-feature-box-main">
+            <h4>FILL YOUR WORLD WITH WILDLIFE</h4>
+            <h3>London Zoo Membership</h3>
+            <p>
+              Sunny days, adventurous days, unforgettable days... Experience
+              amazing animals for a whole year at London and Whipsnade Zoos and
+              help protect wildlife too.
+            </p>
+
+            <a href="#" class="med-btn-3 med-btn-link">BECOME A MEMBER</a>
+          </div>
+
+          <div class="big-feature-box-layout-sub">
+            <div class="big-feature-box-sub">
+              <div class="img-otter"></div>
+              <h4>BOO AT THE ZOO</h4>
+              <h3>Halloween at London Zoo</h3>
+              <p>
+                Trick-or-treat yourselves to a visit to London Zoo this October
+                half term to enjoy traditional Halloween crafts, hair-raising
+                animal facts and ghoul school.
+              </p>
+
+              <a href="#" class="med-btn-3 med-btn-link"
+                >BOOK FOR A WILD DAY OUT</a
+              >
+            </div>
+
+            <div class="big-feature-box-sub">
+              <div class="img-penguin"></div>
+              <h4>EXPLORE EXPERIENCES AT LONDON ZOO</h4>
+              <h3>London Zoo Experiences</h3>
+              <p>
+                Make your visit extra special with one of our London Zoo
+                experiences.
+              </p>
+
+              <a href="#" class="med-btn-3 med-btn-link"
+                >BOOK AN EXPERIENCE TODAY</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BEGIN WHAT OTHERS SAY -->
+
+      <div class="orphan-heading">
+        <h2>What others say</h2>
+      </div>
+
+      <section class="scroll-quotes-container">
+        <div>
+          <img src="./assets/quote.svg" />
+          <p>
+            Absolutely amazing zoo and my favourite in the UK! I mainly visited
+            as I wanted to see a sloth, and I wasn't disappointed. You could get
+            such a good view and so close! The zoo is quite big and has so many
+            animals there! Had so much fun and definitely will be returning. The
+            restaurant there is so nice and does amazing food for fair prices.
+            <span>- H. Fryett</span>
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/quote.svg" />
+          <p>
+            For a zoo, this attraction is so well organised and child friendly.
+            A full day of 10:00 - 16:00 here was not nearly enough to see all
+            the exhibits with sufficient time to fully appreciate the varying
+            personalities of the animals in their magnificent enclosures.
+            <span>- Richard C.</span>
+          </p>
+        </div>
+
+        <div>
+          <img src="./assets/quote.svg" />
+          <p>
+            I always enjoy my visits to London Zoo. I will never take for
+            granted how lucky I am to have this beautiful collection of some of
+            the world’s most wonderful animal species a tube and bus ride from
+            my house. <span>- Izzy</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- BEGIN AN ADVENTURE -->
+
+      <section class="highlight-box">
+        <h2>An adventure with a difference</h2>
+        <p>
+          When you visit London Zoo, you’re doing great things with your great
+          day out. We are more than just a zoo – we are part of ZSL (Zoological
+          Society of London) a global conservation charity. Our teams of
+          conservationists, scientists, technicians and community specialists
+          are active in over 70 countries - and every visit to London Zoo helps
+          fund their vital work to restore habitats and protect wildlife.
+        </p>
+        <a href="#" class="med-btn-link med-btn-4"
+          >DISCOVER OUR CONSERVATION WORK</a
+        >
+      </section>
+
+      <!-- BEGIN LATEST ZOO NEWS -->
+      <h2>Latest Zoo News</h2>
+
+      <section class="scroll-cards-container">
+        <div>
+          <a href="#">
+            <img
+              src="./assets/zoo_news_1.webp"
+              alt="A chestnut-backed thrush chick resting on a branch"
+            />
+            <span>3 AUGUST 2023</span>
+            <h4>17 chicks hatch at London Zoo’s walkthrough aviary</h4>
+            <p>
+              Boost for threatened species as 17 chicks hatch at London Zoo’s
+              Blackburn Pavilion walkthrough aviary
+            </p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img
+              src="./assets/zoo_news_2.jpg"
+              alt="A Sumatran tiger in a swing at London Zoo"
+            />
+            <span>27 JULY 2023</span>
+            <h4>
+              Critically Endangered tiger cubs enjoy playtime at London Zoo
+            </h4>
+            <p>
+              Sumatran tiger cubs Zac and Crispin were flying high at London Zoo
+              this week
+            </p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img
+              src="./assets/zoo_news_3.webp"
+              alt="A fluffy Humboldt penguin chick "
+            />
+            <span>17 JULY 2023</span>
+            <h4>Penguin chicks find their flippers</h4>
+            <p>
+              No armbands were necessary in London Zoo’s nursery penguin pool
+              this week, as 11 young Humboldt penguin chicks took to the water
+              for their first swimming lesson.
+            </p>
+          </a>
+        </div>
+
+        <div>
+          <a href="#">
+            <img
+              src="./assets/zoo_news_4.jpg"
+              alt="Bhanu has his ear cleaned at London Zoo"
+            />
+            <span>29 JUNE 2023</span>
+            <h4>Endangered Asiatic lion gets his ears cleaned at London Zoo</h4>
+            <p>
+              An endangered lion with earache has been given the VIP treatment
+              by vets at London Zoo, who called on specialists from across the
+              country to help clean out the 174kg feline’s ears.
+            </p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="curved-bit"></div>
+
+      <div class="rest-of-footer">
+        <p>
+          London Zoo is part of ZSL, an international science-driven
+          conservation charity, working to restore wildlife in the UK and around
+          the world. Also visit <a href="#">Whipsnade Zoo</a>, a ZSL
+          conservation zoo.
+        </p>
+
+        <div class="connect-with-us">
+          <h3>Connect With Us</h3>
+
+          <div class="connect-with-us-icons">
+            <a href="#"><img src="./assets/twitter.svg" /></a>
+
+            <a href="#"><img src="./assets/facebook.svg" /></a>
+
+            <a href="#"><img src="./assets/instagram.svg" /></a>
+          </div>
+        </div>
+
+        <div class="subscribe-box">
+          <h3>Get animals in your inbox!</h3>
+          <p>Subscribe to email updates from ZSL</p>
+          <a href="#" class="med-btn-3 med-btn-link">SIGN UP</a>
+        </div>
+
+        <div class="footer-links-layout">
+          <ul class="footer-links">
+            <li><a href="#">Useful Links</a></li>
+            <li><a href="#">Book Tickets</a></li>
+            <li><a href="#">Become a Member</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Plan Your Visit</a></li>
+            <li><a href="#">What's Here</a></li>
+            <li><a href="#">Latest News</a></li>
+            <li><a href="#">Conservation</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Support Us</a></li>
+            <li><a href="#">Online Shop</a></li>
+            <li><a href="#">Working at ZSL</a></li>
+            <li><a href="#">ZSL Library</a></li>
+          </ul>
+
+          <ul class="footer-links">
+            <li><a href="#">Site Information</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Cookie Information</a></li>
+            <li><a href="#">Complaint Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+            <li><a href="#">Equality & Diversity Policy</a></li>
+            <li><a href="#">Safeguarding at ZSL & our Zoos</a></li>
+            <li><a href="#">Website Accessibility </a></li>
+          </ul>
+        </div>
+        <div class="final-footer-layout">
+          <section class="footer-badges">
+            <a href="#"><img src="./assets/visit-england.webp" /></a>
+            <a href="#"><img src="./assets/eaza.webp" /></a>
+            <a href="#"><img src="./assets/blaza.webp" /></a>
+          </section>
+
+          <p class="footer-smallprint">
+            Zoological Society of London is incorporated by Royal Charter with
+            Company Number RC000749. Registered Charity in England and Wales
+            number 208728. Registered address: Regent's Park, London, England
+            NW1 4RY
+          </p>
+
+          <div class="footer-logo">
+            <img src="./assets/zsl_footer_logo.svg" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
